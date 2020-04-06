@@ -22,9 +22,9 @@ from modules.show import *
 from modules.csv_downloader import *
 from modules.bounding_boxes import *
 from modules.image_level import *
+import os
 
-
-ROOT_DIR = ''
+ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 DEFAULT_OID_DIR = os.path.join(ROOT_DIR, 'OID')
 
 if __name__ == '__main__':
